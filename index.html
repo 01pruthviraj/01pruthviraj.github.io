@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <title>Pruthvi</title> 
+</head>
+<body>
+
+<!-- Navbar --->
+
+<nav>
+    <div class="logo">
+        <a href="#">PruthviRaj</a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="nav-links">
+       
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#services" onclick="closeNav()">Projects</a>
+        <a href="#stats" onclick="closeNav()">Bug Hunting</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+</nav> 
+
+<!--nav bar -->
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.nav-links');
+        menu.classList.toggle('active');
+    }
+
+    function closeNav() {
+        const menu = document.querySelector('.nav-links');
+        menu.classList.remove('active');
+    }
+</script> 
+
+<!-- Home Section -->
+
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="main.jpg" alt="Profile Image">
+    </div>
+    <div class="home-content">
+        <h1>I am Pruthvi<span>
+            Ethical Hacker</span></h1>
+        <p> I am highly motivated to identify and resolve vulnerabilities,finding bugs in company to help enhance security.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section 
+
+<section class="about" id="about">
+    <div class="content">
+        <div class="title">Who Am I</div>
+        <div class="about-details">
+            <p>I am <span>Pruthvi</span> 
+                </p>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+<!-- Project Section 
+
+<section class="services" id="services">
+    <div class="content">
+        <div class="title">Projects</div>
+        <div class="boxes">
+            <div class="box">
+                <i class="fa fa-code icon"></i>
+                <div class="service-title">Web Security</div>
+                <p>I provide advanced website security solutions, including vulnerability assessment and penetration testing.</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-lock icon"></i>
+                <div class="service-title">Network Security</div>
+                <p>Specializing in securing networks and preventing data breaches through firewalls, encryption, and monitoring.</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-shield-alt icon"></i>
+                <div class="service-title">Ethical Hacking</div>
+                <p>I conduct ethical hacking services to help businesses identify and fix security vulnerabilities.</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- Project Section -->
+
+<section class="services" id="services">
+    <div class="content">
+        <div class="title">Projects</div>
+        <div class="boxes">
+            <div class="box">
+                <i class="fa fa-code icon"></i>
+                <div class="service-title">Web Security</div>
+                <p>I provide advanced website security solutions, including vulnerability assessment and penetration testing.</p>
+                <div class="project-links">
+                    <a href="https://github.com/your-repo" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-live-demo-link.com" target="_blank" class="live-demo-link">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-lock icon"></i>
+                <div class="service-title">Network Security</div>
+                <p>Specializing in securing networks and preventing data breaches through firewalls, encryption, and monitoring.</p>
+                <div class="project-links">
+                    <a href="https://github.com/your-repo" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-live-demo-link.com" target="_blank" class="live-demo-link">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-shield-alt icon"></i>
+                <div class="service-title">Ethical Hacking</div>
+                <p>I conduct ethical hacking services to help businesses identify and fix security vulnerabilities.</p>
+                <div class="project-links">
+                    <a href="https://github.com/your-repo" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-live-demo-link.com" target="_blank" class="live-demo-link">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Stats Section -->
+
+<section class="stats" id="stats">
+    <div class="content">
+        <div class="title">Bug Report & Patch Stats</div>
+        <div class="stats-boxes">
+            <div class="stats-box">
+                <div class="stats-count" id="reported-count" data-count="80">0</div>
+                <div class="stats-title">Bugs Reported</div>
+            </div>
+            <div class="stats-box">
+                <div class="stats-count" id="patched-count" data-count="30">0</div>
+                <div class="stats-title">Bugs Patched</div>
+            </div>
+            <div class="stats-box">
+                <div class="stats-count" id="appreciated-count" data-count="12">0</div>
+                <div class="stats-title">Bugs Appreciated</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- start service -->
+<script>
+    // Function to animate the count up
+    function animateCountUp(element, target) {
+        let start = 0;
+        const duration = 2000; // 2 seconds
+        const increment = Math.ceil(target / (duration / 16)); // Update every ~16ms (60fps)
+
+        const updateCount = () => {
+            start += increment;
+            if (start > target) {
+                element.textContent = target;
+            } else {
+                element.textContent = start;
+                requestAnimationFrame(updateCount);
+            }
+        };
+
+        updateCount();
+    }
+
+    // Check if an element is in the viewport
+    function isElementInView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }
+
+    // Start the animation when the section is in view or when nav link is clicked
+    function startCountAnimationOnView() {
+        const statsSection = document.querySelector("#stats");
+        const statsCounts = document.querySelectorAll(".stats-count");
+
+        const animateIfInView = () => {
+            if (isElementInView(statsSection)) {
+                statsCounts.forEach((countElement) => {
+                    const target = parseInt(countElement.getAttribute("data-count"), 10);
+                    animateCountUp(countElement, target);
+                });
+                // Remove scroll event listener after animation starts
+                window.removeEventListener("scroll", animateIfInView);
+            }
+        };
+
+        // Trigger animation if section is already in view on page load
+        animateIfInView();
+
+        // Trigger animation when user scrolls to the section
+        window.addEventListener("scroll", animateIfInView);
+    }
+
+    // Start the animation on page load and on navigation link click
+    window.addEventListener("load", () => {
+        startCountAnimationOnView();
+    });
+
+    // Event listener for navigation link clicks
+    const navLinks = document.querySelectorAll("a[href='#stats']");
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            // Smooth scroll to section
+            document.querySelector("#stats").scrollIntoView({
+                behavior: "smooth"
+            });
+
+            // Trigger the count animation after scrolling
+            setTimeout(startCountAnimationOnView, 500); // Adjust timeout for smooth scroll completion
+        });
+    });
+</script>   
+
+<!-- Contact Me Section -->
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title">Contact Me</div>
+        <div class="contact-details">
+            <p>If you would like to get in touch, feel free to email me at <span>xxxxx@gmail.com</span></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+    <div class="text">
+        <span>Created By <a href="#">Pruthvi Raj</a> | &#169; 2025 All Rights Reserved</span>
+    </div>
+</footer>
+
+</body>
+</html>
