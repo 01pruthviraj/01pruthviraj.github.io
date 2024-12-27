@@ -231,7 +231,6 @@ nav {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    align-items: center; /* Ensures alignment on mobile */
 }
 
 .stats-box {
@@ -241,15 +240,8 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 200px;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
 }
 
-/* Increase hover effect on mobile */
-.stats-box:hover {
-    transform: translateY(-10px);
-}
-
-/* Stats Count */
 .stats-count {
     font-size: 2.5rem;
     font-weight: bold;
@@ -262,7 +254,6 @@ nav {
     color: #333;
 }
 
-/* Color coding for different counts */
 .stats-count[data-count="300"] {
     color: #007bff;
 }
@@ -273,31 +264,6 @@ nav {
 
 .stats-count[data-count="7"] {
     color: #ffc107;
-}
-
-/* Mobile View */
-@media (max-width: 768px) {
-    .stats .title {
-        font-size: 1.5rem; /* Adjust title size for smaller screens */
-    }
-
-    .stats-box {
-        width: 150px; /* Adjust the width of the stat boxes on mobile */
-        padding: 15px; /* Reduce padding for mobile */
-    }
-
-    .stats-count {
-        font-size: 2rem; /* Reduce font size of the count */
-    }
-
-    .stats-title {
-        font-size: 1rem; /* Adjust the title font size */
-    }
-
-    .stats-boxes {
-        flex-direction: column; /* Stack the boxes vertically on mobile */
-        gap: 15px; /* Adjust gap between boxes */
-    }
 }
 
 footer {
