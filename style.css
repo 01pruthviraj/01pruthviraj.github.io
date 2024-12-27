@@ -35,7 +35,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-
 }
 
 .logo a {
@@ -91,25 +90,25 @@ nav {
         display: none;
         flex-direction: column;
         gap: 15px;
-        position: fixed; /* Change to fixed to overlay on top of the screen */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0; /* Stretch the nav links to cover the entire screen */
-        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-        backdrop-filter: blur(10px); /* Apply blur effect to the background */
-        justify-content: center; /* Center content vertically */
-        align-items: center; /* Center content horizontally */
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 0; /* No padding needed, since it will cover the whole screen */
-        border-top: none; /* No need for a top border */
+        padding: 0;
+        border-top: none;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
     }
 
     .nav-links.active {
         display: flex;
-        transform: translateX(0); /* Slide in the nav links */
+        transform: translateX(0);
     }
 
     .menu-icon {
@@ -117,104 +116,104 @@ nav {
     }
 }
 
-        /* Home Section */
-        .home {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 90vh;
-            background: #e9ecef;
-            padding: 0 50px;
-            flex-direction: column;
-        }
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: #e9ecef;
+    padding: 0 50px;
+    flex-direction: column;
+}
 
-        .home-img img {
-            border-radius: 50%;
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
+.home-img img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
 
-        .home-content {
-            max-width: 600px;
-        }
+.home-content {
+    max-width: 600px;
+}
 
-        .home-content h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
+.home-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-        .home-content h1 span {
-            color: #007bff;
-        }
+.home-content h1 span {
+    color: #007bff;
+}
 
-        .typing-text span {
-            font-style: italic;
-            color: #555;
-        }
+.typing-text span {
+    font-style: italic;
+    color: #555;
+}
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
 
-        .social-icons a {
-            font-size: 30px;
-            color: #333;
-            transition: transform 0.3s;
-        }
+.social-icons a {
+    font-size: 30px;
+    color: #333;
+    transition: transform 0.3s;
+}
 
-        .social-icons a:hover {
-            color: #007bff;
-            transform: scale(1.2);
-        }
+.social-icons a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
 
-        /* Project Services Section */
-        .services {
-            padding: 75px;
-            text-align: center;
-            background: #fff;
-        }
+/* Project Services Section */
+.services {
+    padding: 75px;
+    text-align: center;
+    background: #fff;
+}
 
-        .services .title {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #333;
-        }
+.services .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-        .services .boxes {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.services .boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .services .box {
-            background: #e9ecef;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            width: 200px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
+.services .box {
+    background: #e9ecef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
 
-        .services .box:hover {
-            transform: translateY(-10px);
-            background: #007bff;
-            color: #fff;
-        }
+.services .box:hover {
+    transform: translateY(-10px);
+    background: #007bff;
+    color: #fff;
+}
 
-        .services .box .icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+.services .box .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-        /* Bug reports Section */
+/* Bug reports Section */
 .stats {
     padding: 87px;
     text-align: center;
@@ -253,7 +252,7 @@ nav {
 .stats-title {
     font-size: 1.2rem;
     color: #333;
-}  
+}
 
 .stats-count[data-count="300"] {
     color: #007bff;
@@ -268,27 +267,26 @@ nav {
 }
 
 footer {
-  background: #000; /* add a background color */
-  padding: 15px 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+    background: #000;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer .text span {
-  font-size: 17px;
-  font-weight: 400;
-  color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
 }
 
 footer .text span a {
-  font-weight: 500;
-  color: #FFF;
+    font-weight: 500;
+    color: #FFF;
 }
 
 footer .text span a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-
 
 /* Contact Me Section */
 .contact {
@@ -325,4 +323,3 @@ footer .text span a:hover {
         font-size: 1rem;
     }
 }
-
