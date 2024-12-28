@@ -121,7 +121,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 105vh;
+    height: 90vh;
     background: #e9ecef;
     padding: 0 50px;
     flex-direction: column;
@@ -213,15 +213,16 @@ nav {
     margin-bottom: 10px;
 }
 
+
 /* Bug reports Section */
 .stats {
-    padding: 105px 25px; /* Adjusted padding for better mobile view */
+    padding: 75px;
     text-align: center;
     background: #e9ecef;
 }
 
 .stats .title {
-    font-size: 1.8rem; /* Adjusted font size for smaller screens */
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
 }
@@ -238,46 +239,22 @@ nav {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Full width for mobile */
-    max-width: 200px; /* Maintain width limit for larger screens */
+    width: 200px;
     text-align: center;
 }
 
 .stats-count {
-    font-size: 2rem; /* Adjusted font size for better scaling */
+    font-size: 2.5rem;
     font-weight: bold;
+    color: #007bff;
     margin-bottom: 10px;
 }
 
 .stats-title {
-    font-size: 1rem; /* Adjusted font size for better scaling */
+    font-size: 1.2rem;
     color: #333;
-}
+}  
 
-/* Use media queries for responsive styles */
-@media (min-width: 768px) {
-    .stats {
-        padding: 87px;
-    }
-
-    .stats .title {
-        font-size: 2rem;
-    }
-
-    .stats-box {
-        width: 200px;
-    }
-
-    .stats-count {
-        font-size: 2.5rem;
-    }
-
-    .stats-title {
-        font-size: 1.2rem;
-    }
-}
-
-/* Dynamic color based on data-count */
 .stats-count[data-count="300"] {
     color: #007bff;
 }
