@@ -213,62 +213,9 @@ nav {
     margin-bottom: 10px;
 }
 
-/* Bug reports Section 
-.stats {
-    padding: 87px;
-    text-align: center;
-    background: #e9ecef;
-}
-
-.stats .title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.stats-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.stats-box {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
-}
-
-.stats-count {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.stats-title {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.stats-count[data-count="300"] {
-    color: #007bff;
-}
-
-.stats-count[data-count="30"] {
-    color: #28a745;
-}
-
-.stats-count[data-count="7"] {
-    color: #ffc107;
-} */
-
 /* Bug reports Section */
 .stats {
-    padding: 50px 20px; /* Adjusted padding for better mobile view */
+    padding: 105px 25px; /* Adjusted padding for better mobile view */
     text-align: center;
     background: #e9ecef;
 }
@@ -341,11 +288,6 @@ nav {
 
 .stats-count[data-count="7"] {
     color: #ffc107;
-}
-
-/* Fallback to ensure proper styling if data-count isn't applied */
-.stats-count {
-    color: #333; /* Default color */
 }
 
 
