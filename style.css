@@ -213,7 +213,7 @@ nav {
     margin-bottom: 10px;
 }
 
-/* Bug reports Section */
+/* Bug reports Section 
 .stats {
     padding: 87px;
     text-align: center;
@@ -264,7 +264,92 @@ nav {
 
 .stats-count[data-count="7"] {
     color: #ffc107;
+} */
+
+/* Bug reports Section */
+.stats {
+    padding: 50px 20px; /* Adjusted padding for better mobile view */
+    text-align: center;
+    background: #e9ecef;
 }
+
+.stats .title {
+    font-size: 1.8rem; /* Adjusted font size for smaller screens */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.stats-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stats-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width for mobile */
+    max-width: 200px; /* Maintain width limit for larger screens */
+    text-align: center;
+}
+
+.stats-count {
+    font-size: 2rem; /* Adjusted font size for better scaling */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stats-title {
+    font-size: 1rem; /* Adjusted font size for better scaling */
+    color: #333;
+}
+
+/* Use media queries for responsive styles */
+@media (min-width: 768px) {
+    .stats {
+        padding: 87px;
+    }
+
+    .stats .title {
+        font-size: 2rem;
+    }
+
+    .stats-box {
+        width: 200px;
+    }
+
+    .stats-count {
+        font-size: 2.5rem;
+    }
+
+    .stats-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Dynamic color based on data-count */
+.stats-count[data-count="300"] {
+    color: #007bff;
+}
+
+.stats-count[data-count="30"] {
+    color: #28a745;
+}
+
+.stats-count[data-count="7"] {
+    color: #ffc107;
+}
+
+/* Fallback to ensure proper styling if data-count isn't applied */
+.stats-count {
+    color: #333; /* Default color */
+}
+
+
+/*Fotter section*/
 
 footer {
     background: #000;
