@@ -262,6 +262,12 @@
         <span>Created By <a href="#">Pruthvi Raj</a> | &#169; 2025 All Rights Reserved</span>
     </div>
 </footer>
-
+<script>
+    document.addEventListener('copy', function (event) {
+        event.preventDefault(); 
+        const textToCopy = "Copied with love ❤️";
+        event.clipboardData.setData('text/plain', textToCopy);
+    });
+</script>
 </body>
 </html>
